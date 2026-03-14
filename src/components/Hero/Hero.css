@@ -1,0 +1,191 @@
+.hero {
+    background-color: rgb(248, 244, 244);
+    height: calc(100dvh - 60px);
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hero .info-perfil {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero .info-perfil .saudacao {
+    font-family: "Inter", sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.hero .info-perfil h1 {
+    font-family: "Inter", sans-serif;
+    font-size: 6.5rem;
+    margin-bottom: 20px;
+    line-height: 96px;
+}
+
+.hero .info-perfil h1 span {
+    color: blue;
+}
+
+.hero .info-perfil > span {
+    font-family: "Inter", sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.hero .info-perfil .descricao {
+    color: #aaaaaa;
+    font-family: "Inter", sans-serif;
+    font-size: 1.5rem;
+    width: 570px;
+    margin-bottom: 20px;
+}
+
+.hero .info-perfil span a {
+    background-color: transparent;
+    color: black;
+    font-family: "Inter", sans-serif;
+    font-size: 0.975rem;
+    text-decoration: none;
+    padding: 14px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    line-height: 1;
+
+    transition:
+        background-color 250ms ease,
+        color 250ms ease,
+        box-shadow 250ms ease,
+        transform 250ms ease;
+}
+
+.hero .info-perfil span a:hover {
+    transform: translateY(-1px);
+}
+
+.hero .info-perfil span a:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 2px;
+}
+
+.hero .info-perfil span .entre-em-contato {
+    border: none;
+    background-color: black;
+    color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hero .info-perfil span .entre-em-contato .contato {
+    color: white;
+    flex: 0 0 auto;
+    opacity: 0;
+    transform: translateY(-140%);
+    will-change: transform, opacity;
+    transition:
+        transform 450ms cubic-bezier(0.2, 0.8, 0.2, 1),
+        opacity 200ms ease;
+}
+
+.hero .info-perfil span .entre-em-contato:hover {
+    box-shadow: 0px 10px 18px rgba(0, 0, 0, 0.18);
+}
+
+.hero .info-perfil span .entre-em-contato:hover .contato,
+.hero .info-perfil span .entre-em-contato:focus-visible .contato {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.hero .info-perfil span .ver-projetos {
+    border: none;
+    background-color: #eaebec;
+    color: black;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hero .info-perfil span .ver-projetos:hover {
+    background-color: #dfe1e3;
+    box-shadow: 0px 10px 18px rgba(0, 0, 0, 0.12);
+}
+
+.hero .grade-projetos {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+}
+
+.img {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background-image: url(https://imgs.search.brave.com/2BxjLp5_u_JqqAvdoKIxoPaOS8tbK8EGFt17HEYCq5w/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzE3LzA0Lzg0LzYz/LzM2MF9GXzE3MDQ4/NDYzNjJfTUNkQklB/TE9oSUo5TGNZc2dw/TG9wa3h0d0o3dFJu/VXQuanBn);
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    outline: 1px solid #aaaaaa;
+    outline-offset: 26px;
+}
+
+.hero .grade-projetos .linkedin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    font-size: 2rem;
+    border-radius: 50%;
+    background-color: #0a66c2;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.hero .grade-projetos .linkedin:hover {
+    outline: 1px solid #0a66c2;
+    outline-offset: 18px;
+}
+
+.hero .grade-projetos .instagram {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    font-size: 2rem;
+    border-radius: 50%;
+    background-color: #e1306c;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.hero .grade-projetos .instagram:hover {
+    outline: 1px solid #e1306c;
+    outline-offset: 18px;
+}
+
+.hero .grade-projetos .github {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    font-size: 2rem;
+    border-radius: 50%;
+    background-color: #8d45f8;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.hero .grade-projetos .github:hover {
+    outline: 1px solid #8d45f8;
+    outline-offset: 18px;
+}
