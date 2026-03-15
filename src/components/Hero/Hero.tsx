@@ -15,7 +15,6 @@ export default function Hero() {
       </div>
 
       <div className="grade-projetos">
-        {/* <div className="blob"></div> */}
         <div className="img"></div>
         <a href="https://www.linkedin.com/in/kau%C3%AA-alves-2122b8267/" className="linkedin" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
         <a href="https://www.instagram.com/kaue.alves.s/" className="instagram" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>

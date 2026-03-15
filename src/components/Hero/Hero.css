@@ -3,7 +3,8 @@
     height: calc(100dvh - 60px);
     color: black;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding-inline: 80px;
     align-items: center;
 }
 
@@ -188,4 +189,22 @@
 .hero .grade-projetos .github:hover {
     outline: 1px solid #8d45f8;
     outline-offset: 18px;
+}
+
+@media (max-width: 1024px) {
+    .hero {
+        flex-direction: column;
+        gap: 40px;
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .hero .info-perfil h1 {
+        font-size: 3.5rem;
+        line-height: 48px;
+    }
+
+    .hero .info-perfil .descricao {
+        width: 100%;
+    }
 }
